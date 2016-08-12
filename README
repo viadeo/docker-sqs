@@ -1,0 +1,6 @@
+
+build:  docker build -t viadeo/docker-sqs .
+
+run:    docker run --rm -v "$(pwd)/config:/elasticmq/config:ro" -p 9324:9324 viadeo/docker-sqs
+
+test: cd tests && ./run.sh
