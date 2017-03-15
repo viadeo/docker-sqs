@@ -2,7 +2,7 @@
 # run:    docker run --rm -p 9324:9324 viadeo/docker-sqs
 # test: cd tests && ./run.sh
 
-FROM quay.io/viadeo/docker-java
+FROM openjdk:8
 
 EXPOSE 9324
 
